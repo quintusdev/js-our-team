@@ -31,3 +31,21 @@ const team_info = [
 
 console.log(team_info);
 
+//RECUPERO IL CONTENITORE DAL DOM
+
+const teaminfo = document.getElementById('teaminfo');
+
+//ciclo l'array con le informazioni del team
+for (let i = 0; i < team_info.length; i++) {
+    //la info che sto ciclando la salvo in una variabile
+    let info = team_info[i];
+    
+    //creo l'elemento nel DOM che contiene le info del team
+    let infoteam = `<div class="infoteam">
+        <p>${info.name}</p>
+        <p>${info.role}</p>
+        </div>`
+    
+    //concateno le nuove info alle precedenti
+    teaminfo.innerHTML += infoteam;
+}
