@@ -27,3 +27,7 @@ const team_info = [
 },
 ];
 
+//stampo su console log le informazioni per ogni membro del team
+
+console.log(team_info);
+
