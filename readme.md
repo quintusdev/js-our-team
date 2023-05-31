@@ -3,6 +3,5 @@ PROBLEMA: Utilizzando i dati forniti, creare un array di oggetti per rappresenta
 MILESTONE 0:
 Creare l’array di oggetti con le informazioni fornite (file informazioni team).
 
-1. CREO E RECUPERO IL CONTENITORE DELL' ARRAY;
-2. CREO UN CICLO FOR PER INSERIRE L'ARRAY;
+1. CREO un array di oogetti dove inserisco ogni info di nome, ruolo e foto.
 
