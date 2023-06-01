@@ -31,11 +31,11 @@ const team_info = [
 ];
 
 //stampo su console log le informazioni per ogni membro del team
-for(let i = 0; i < team_info.length; i++){
-    console.log(team_info[i].name);
-    console.log(team_info[i].role);
-    console.log(team_info[i].image);
-}
+// for(let i = 0; i < team_info.length; i++){
+//     console.log(team_info[i].name);
+//     console.log(team_info[i].role);
+//     console.log(team_info[i].image);
+// }
 
 //RECUPERO IL CONTENITORE DAL DOM
 
@@ -47,9 +47,24 @@ for (let i = 0; i < team_info.length; i++) {
     let info = team_info[i];
     
     //creo l'elemento nel DOM che contiene le info del team e concateno direttamente dentro nel DOM
-    teaminfo.innerHTML += `<div class="infoteam">
-        <img src="./img/${info.image}">
-        <p>${info.name}</p>
-        <p>${info.role}</p>
-        </div>`
+    // teaminfo.innerHTML += `<div class="infoteam">
+    //     <img src="./img/${info.image}">
+    //     <p>${info.name}</p>
+    //     <p>${info.role}</p>
+    //     </div>`
 }
+
+//BONUS 2
+
+//inserisco l'array con il relativo indice in una variabile
+let member = team_info[i];
+//creo e visualizzo nel DOM le card con le info dei membri del team
+let card = `<div class="card">
+                <img src=./img/${member.image}" class="card-img-top" alt="foto membro team">
+                <div class="body-card">
+                    <h4 class="title-card">${member.name}</h5>
+                    <p class="text-card">${member.role}</p>
+                </div>
+            </div>`;
+//Inserisco la variabile card nel DOM   
+teaminfo.innerHTML += card;
