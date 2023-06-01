@@ -31,8 +31,11 @@ const team_info = [
 ];
 
 //stampo su console log le informazioni per ogni membro del team
-
-console.log(team_info);
+for(let i = 0; i < team_info.length; i++){
+    console.log(team_info[i].name);
+    console.log(team_info[i].role);
+    console.log(team_info[i].image);
+}
 
 //RECUPERO IL CONTENITORE DAL DOM
 
