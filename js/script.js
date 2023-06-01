@@ -46,13 +46,10 @@ for (let i = 0; i < team_info.length; i++) {
     //la info che sto ciclando la salvo in una variabile
     let info = team_info[i];
     
-    //creo l'elemento nel DOM che contiene le info del team
-    let infoteam = `<div class="infoteam">
+    //creo l'elemento nel DOM che contiene le info del team e concateno direttamente dentro nel DOM
+    teaminfo.innerHTML += `<div class="infoteam">
         <img src="./img/${info.image}">
         <p>${info.name}</p>
         <p>${info.role}</p>
         </div>`
-    
-    //concateno le nuove info alle precedenti
-    teaminfo.innerHTML += infoteam;
 }
